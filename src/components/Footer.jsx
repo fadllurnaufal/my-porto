@@ -36,7 +36,7 @@ const Menu = [
 
 const currentYear = new Date().getFullYear();
 
-export default function Footer() {
+export function Footer() {
   const scrollToSection = (sectionId) => {
     const section = document.querySelector(`#${sectionId}`);
     if (section) {
@@ -67,9 +67,9 @@ export default function Footer() {
   };
 
   return (
-    <footer className="relative w-full">
-      <div className="mx-auto w-full max-w-7xl px-8">
-        <div className="mt-12 flex w-full flex-col items-center justify-center border-t border-blue-gray-50 py-4 md:flex-row md:justify-between">
+    <footer className="relative">
+      <div className="mx-auto w-full">
+        <div className="mt-12 flex w-full flex-col items-center justify-center border-t border-blue-gray-50 py-4 md:flex-row md:justify-between px-8">
           <Typography
             variant="small"
             className="mb-2 text-center font-normal text-blue-gray-900 md:mb-0"
