@@ -106,7 +106,7 @@ export function Body() {
 
   const mailAddress = "fadllur.naufal@gmail.com";
   const sendMail = () => {
-    const mailtoLink = `mailto:${mailAddress}`;
+    const mailtoLink = `mailto:${mailAddress}?subject=Subjek%20Email&body=Isi%20Pesan%20Email`;
 
     window.location.href = mailtoLink;
   };
@@ -193,7 +193,7 @@ export function Body() {
 
   const [openDialog, setOpenDialog] = React.useState(
     Array(cardData.length).fill(false)
-  ); // Buat array yang menyimpan status dialog
+  );
 
   const handleOpenDialog = (index) => {
     const newOpenDialog = [...openDialog];
@@ -383,7 +383,12 @@ export function Body() {
               >
                 Hire me!
               </Button>
-              <Button variant="outlined" onClick={handleDownload}>
+              <Button
+                variant="outlined"
+                onClick={handleDownload}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 Download CV
               </Button>
             </div>
