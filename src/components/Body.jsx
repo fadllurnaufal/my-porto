@@ -130,7 +130,7 @@ export function Body() {
       content:
         "This application is created to digitize the processes that are traditionally carried out in the counseling division of SMK Negeri 6 Bandung, which are still done manually, into a web-based system.",
       jobTitle: "Fullstack Developer",
-      year: "2021",
+      year: "2022",
       technologies: ["Laravel, ", "MySQL, ", "Tailwind CSS"],
     },
     {
@@ -160,18 +160,18 @@ export function Body() {
       technologies: ["PHP, ", "Javascript, ", "MySQL, ", "Bootstrap"],
     },
     {
-        imageSrc: [
-          "/Diagnose/DashboardPakar.png",
-          "/Diagnose/HomePakar.png",
-          "/Diagnose/IlmuPakar.png",
-        ],
-        title: "Expert System",
-        content:
-          "This application is created to complete my final projected (Thesis).",
-        jobTitle: "Software Engineer",
-        year: "2023",
-        technologies: ["PHP, ", "MySQL, ", "Bootstrap"],
-      },
+      imageSrc: [
+        "/Diagnose/DashboardPakar.png",
+        "/Diagnose/HomePakar.png",
+        "/Diagnose/IlmuPakar.png",
+      ],
+      title: "Expert System",
+      content:
+        "This application is created to complete my final projected (Thesis).",
+      jobTitle: "Software Engineer",
+      year: "2023",
+      technologies: ["PHP, ", "MySQL, ", "Bootstrap"],
+    },
     {
       imageSrc: ["/Eyelash/Home.png", "/Eyelash/Booking.png"],
       title: "Kumaw Eyelash Specialist",
@@ -201,6 +201,23 @@ export function Body() {
     newOpenDialog[index] = !newOpenDialog[index];
     setOpenDialog(newOpenDialog);
   };
+
+  const [download, setDownloaded] = useState(false);
+
+  function handleDownload() {
+    if (!download) {
+      const fileLoc = "/CV-naufalfadllur.png";
+
+      const a = document.createElement("a");
+      a.href = fileLoc;
+
+      a.download = "CV-MuhammadNaufalFadllurRohman.png";
+
+      a.click();
+      a.remove();
+      setDownloaded(true);
+    }
+  }
 
   return (
     <>
@@ -352,15 +369,18 @@ export function Body() {
               University in Bandung. I have experience working on campus
               projects, internships, and freelance work. I became active at the
               end of 2021, during my fifth semester. I am experienced in
-              programming languages such as PHP, ReactJs, Laravel, Codeigniter,
-              and MySQL. For completed projects, I have attached them below.
+              programming languages and technologies such as PHP, ReactJs,
+              Laravel, Codeigniter, and MySQL. For completed projects, I have
+              attached them below.
             </Typography>
             <div
               className="flex sm:flex-row flex-col gap-y-2 sm:gap-x-2 mt-6 sm:mt-8"
               data-aos="fade-up"
             >
-              <Button> Hire me! </Button>
-              <Button variant="outlined"> Download CV</Button>
+              <Button onClick={sendMail}> Hire me! </Button>
+              <Button variant="outlined" onClick={handleDownload}>
+                Download CV
+              </Button>
             </div>
           </div>
         </div>
