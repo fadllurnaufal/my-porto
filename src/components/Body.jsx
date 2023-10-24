@@ -1,11 +1,10 @@
 import "../App.css";
+import "swiper/css";
 import "aos/dist/aos.css";
-import useScrollSnap from "react-use-scroll-snap";
+import {Swiper, SwiperSlide} from "swiper/react";
 import AOS from "aos";
-import Footer from "./Footer";
 import React, { useEffect, useState, Component, useRef } from "react";
 import ParticlesBg from "particles-bg";
-import NavbarSimple from "./Navbar";
 import {
   Typography,
   Button,
