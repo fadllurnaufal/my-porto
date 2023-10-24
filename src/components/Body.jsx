@@ -1,7 +1,7 @@
 import "../App.css";
 import "swiper/css";
 import "aos/dist/aos.css";
-import {Swiper, SwiperSlide} from "swiper/react";
+import { Swiper, SwiperSlide } from "swiper/react";
 import AOS from "aos";
 import React, { useEffect, useState, Component, useRef } from "react";
 import ParticlesBg from "particles-bg";
@@ -376,7 +376,13 @@ export function Body() {
               className="flex sm:flex-row flex-col gap-y-2 sm:gap-x-2 mt-6 sm:mt-8"
               data-aos="fade-up"
             >
-              <Button onClick={sendMail}> Hire me! </Button>
+              <Button
+                onClick={sendMail}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Hire me!
+              </Button>
               <Button variant="outlined" onClick={handleDownload}>
                 Download CV
               </Button>
