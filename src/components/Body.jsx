@@ -49,7 +49,12 @@ library.add(
   faPhp
 );
 
-export function Body() {
+export function Body({pageTitle}) {
+
+  useEffect(() => {
+    document.title = pageTitle || "Naufal Fadllur";
+  }, [pageTitle]);
+
   const [text, setText] = useState("");
   const phrases = ["Web Developer.", "UI/UX Designer.", "Freelancer."];
   const typingSpeed = 100;
