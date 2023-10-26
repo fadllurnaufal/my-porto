@@ -205,12 +205,12 @@ export function Body() {
 
   function handleDownload() {
     if (!download) {
-      const fileLoc = "/CV-naufalfadllur.png";
+      const fileLoc = "/CV-MuhammadNaufal.pdf";
 
       const a = document.createElement("a");
       a.href = fileLoc;
 
-      a.download = "CV-MuhammadNaufalFadllurRohman.png";
+      a.download = "CV-MuhammadNaufalFadllurRohman.pdf";
 
       a.click();
       a.remove();
