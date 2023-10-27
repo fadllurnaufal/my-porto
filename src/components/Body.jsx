@@ -133,7 +133,7 @@ export function Body({pageTitle}) {
       title: "Sisfo BK SMK Negeri 6 Bandung",
       content:
         "This application is created to digitize the processes that are traditionally carried out in the counseling division of SMK Negeri 6 Bandung, which are still done manually, into a web-based system.",
-      jobTitle: "Fullstack Developer",
+      jobTitle: "Web Developer",
       year: "2022",
       technologies: ["Laravel, ", "MySQL, ", "Tailwind CSS"],
     },
@@ -172,7 +172,7 @@ export function Body({pageTitle}) {
       title: "Expert System",
       content:
         "This application is created to complete my final projected (Thesis).",
-      jobTitle: "Software Engineer",
+      jobTitle: "Software Developer",
       year: "2023",
       technologies: ["PHP, ", "MySQL, ", "Bootstrap"],
     },
