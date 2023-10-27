@@ -172,7 +172,7 @@ export function Body({pageTitle}) {
       title: "Expert System",
       content:
         "This application is created to complete my final projected (Thesis).",
-      jobTitle: "Software Developer",
+      jobTitle: "Web Developer",
       year: "2023",
       technologies: ["PHP, ", "MySQL, ", "Bootstrap"],
     },
