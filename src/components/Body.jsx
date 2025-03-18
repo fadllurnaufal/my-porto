@@ -393,6 +393,7 @@ export function Body({pageTitle}) {
                 onClick={handleDownload}
                 target="_blank"
                 rel="noopener noreferrer"
+                className="hidden"
               >
                 Download CV
               </Button>
