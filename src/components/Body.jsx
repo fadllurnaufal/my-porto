@@ -395,7 +395,7 @@ export function Body({pageTitle}) {
                 rel="noopener noreferrer"
                 className="hidden"
               >
-                Download My CV
+                Download CV
               </Button>
             </div>
           </div>
