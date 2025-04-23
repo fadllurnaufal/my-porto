@@ -369,7 +369,7 @@ export function Body({pageTitle}) {
               className="italic mt-6 sm:mt-6 text-justify sm:text-justify"
               data-aos="fade-left"
             >
-              Hello, my name is <strong>Muhammad Naufal Fadllur Rohman</strong>, but you can call me <strong>Naufal</strong>. I am a web developer with over 2 years of experience. I graduated from Widyatama University in Bandung and have been actively involved in the tech industry since late 2021. Throughout my career, I’ve contributed to various projects through full-time roles, internships, and freelance work. I specialize in technologies such as PHP, JavaScript, C#, VB.NET, ASP.NET, React.js, Laravel, CodeIgniter, MySQL, and more. Below are some of the projects I’ve worked on.
+              Hello, my name <strong>Muhammad Naufal Fadllur Rohman</strong>, but you can call me <strong>Naufal</strong>. I am a web developer with over 2 years of experience. I graduated from Widyatama University in Bandung and have been actively involved in the tech industry since late 2021. Throughout my career, I’ve contributed to various projects through full-time roles, internships, and freelance work. I specialize in technologies such as PHP, JavaScript, C#, VB.NET, ASP.NET, React.js, Laravel, CodeIgniter, MySQL, and more. Below are some of the projects I’ve worked on.
             </Typography>
             <div
               className="flex sm:flex-row flex-col gap-y-2 sm:gap-x-2 mt-6 sm:mt-8"
